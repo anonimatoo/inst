@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Login • Instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/logo.jpeg" type="image/x-icon">
+</head>
+<body>
+    <div class="container login-container">
+        <img src="/logo.jpeg" alt="Instagram Logo" class="logo-login">
+        <form id="login-form">
+            <input type="text" name="username" placeholder="Telefone, nome de usuário ou email" required>
+            <input type="password" name="password" placeholder="Senha" required>
+            <button type="submit" class="button" id="login-button">Entrar</button>
+        </form>
+        <div class="divider">
+            <div class="line"></div>
+            <div class="or">OU</div>
+            <div class="line"></div>
+        </div>
+        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+    </div>
+    <div class="signup-container">
+        <p>Não tem uma conta? <a href="#">Cadastre-se.</a></p>
+    </div>
+
+    <div id="loading-overlay" class="hidden">
+        <div class="spinner"></div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
+
