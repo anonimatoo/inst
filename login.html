@@ -2,35 +2,99 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Login • Instagram</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="/logo.jpeg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 350px;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+        }
+
+        .logo {
+            width: 120px;
+            max-width: 50%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0095f6;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button.secondary {
+            background-color: white;
+            color: #0095f6;
+            border: 1px solid #0095f6;
+            margin-top: 10px;
+        }
+
+        a {
+            display: block;
+            margin-top: 10px;
+            color: #00376b;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: none;
+            border-top: 1px solid #ddd;
+        }
+    </style>
 </head>
 <body>
-    <div class="container login-container">
-        <img src="/logo.jpeg" alt="Instagram Logo" class="logo-login">
-        <form id="login-form">
-            <input type="text" name="username" placeholder="Telefone, nome de usuário ou email" required>
-            <input type="password" name="password" placeholder="Senha" required>
-            <button type="submit" class="button" id="login-button">Entrar</button>
-        </form>
-        <div class="divider">
-            <div class="line"></div>
-            <div class="or">OU</div>
-            <div class="line"></div>
-        </div>
-        <a href="#" class="forgot-password">Esqueceu a senha?</a>
-    </div>
-    <div class="signup-container">
-        <p>Não tem uma conta? <a href="#">Cadastre-se.</a></p>
-    </div>
 
-    <div id="loading-overlay" class="hidden">
-        <div class="spinner"></div>
-    </div>
+<div class="login-container">
+    <!-- Logo -->
+    <img src="logo.png" alt="Minha Logo" class="logo">
 
-    <script type="module" src="script.js"></script>
+    <!-- Campos de login -->
+    <input type="text" placeholder="Nome de usuário, email ou celular">
+    <input type="password" placeholder="Senha">
+
+    <!-- Botões -->
+    <button>Entrar</button>
+    <a href="#">Esqueceu a senha?</a>
+    <hr>
+    <a href="#"><button class="secondary">Criar nova conta</button></a>
+</div>
+
 </body>
 </html>
-
